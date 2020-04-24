@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.board {
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-template-rows: repeat(8, 100px);
+
+  background-color: black;
+}
+
+.box {
+  height: 100px;
+  width: 150px;
+  border: solid 1px black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* decorating */
+  font-weight: bold;
+}

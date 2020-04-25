@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;
+
+exports[`Board should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;

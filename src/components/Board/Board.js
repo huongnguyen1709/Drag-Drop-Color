@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import initialData from './initialData'
+import initialData from '../initialData'
 
-import Box from './Box'
+import Box from '../Box'
 
 class Board extends Component {
 

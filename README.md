@@ -1,7 +1,7 @@
 ### Create the new folder, download file bundle in the folder created, open cmd
 
 ### Clone command 
-git clone name_file.bundle name_file
+git clone file_name.bundle file_name
 
 ### Install node_modules command
 npm install

@@ -18,19 +18,16 @@ code {
 }
 
 .board {
-  margin: 20px 10px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 100px);
 
-  background-color: black;
+  background-color: #f1f8e9;
 }
 
 .box {
-  height: 100px;
-  width: 150px;
   border: solid 1px black;
-
   display: flex;
   justify-content: center;
   align-items: center;

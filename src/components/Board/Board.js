@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
-import initialData from '../initialData'
+import initialData from '../Data/initialData'
 
-import Box from '../Box'
+import Box from '../Board/Box/Box'
 
 class Board extends Component {
 
-    state = initialData
+    constructor(props) {
+        super(props);
+        this.state = {
+            boxes: initialData
+        }
+    }
 
     findIndex = (boxes, id) => {
-        var result = -1;
+        let result = -1;
         boxes.forEach((box, index) => {
             if (box.id === id) {
                 result = index;
@@ -18,7 +23,7 @@ class Board extends Component {
     }
 
     swapBox = (dragId, dropId) => {
-        var { boxes } = this.state
+        let { boxes } = this.state
         const fromIndex = this.findIndex(boxes, dragId)
         const toIndex = this.findIndex(boxes, dropId)
         const fromBox = boxes[fromIndex]
